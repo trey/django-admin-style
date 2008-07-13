@@ -18,6 +18,7 @@ Folder structure:
 
 To customize more parts of the admin's markup, you copy things from
 
-`django/contrib/admin/templates/admin/` to  `yoursite/templates/admin/`
+`django/contrib/admin/templates/admin/` to  `yoursite/templates/admin/`.
 
-[More information in the book.](http://djangobook.com/en/1.0/chapter06/#b70 "Chapter 6: The Django Administration Site")
+- [General information](http://djangobook.com/en/1.0/chapter06/#b70 "Chapter 6: The Django Administration Site")
+- [Customizing the CSS](http://www.djangoproject.com/documentation/admin_css/ "Django | Customizing the Django admin interface | Django Documentation")
