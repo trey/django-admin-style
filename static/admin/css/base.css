@@ -1,16 +1,37 @@
 /*
     Information on customizing the Django admin CSS:
-    http://docs.djangoproject.com/en/dev/obsolete/admin-css/
+    http://www.djangoproject.com/documentation/admin_css/
 */
-#header,
-#branding h1  { color: #F0C132; }
-#header { background: #063C56; }
-#header h1 {
-	padding-left: 0;
-	margin-left: 15px;
-	text-shadow: -2px 2px 2px #0D2130;
-}
-.module h2, .module caption {
-	/* Replace section header gradient if you want. */
-	/* background: #7CA0C7 url(img/default-bg.gif) repeat-x scroll left top; */
-}
+body,
+.module th,
+.module td { font-family: "Helvetica Neue"; }
+#header { background: -webkit-gradient(linear, 0 0, 0 100%, from(#656565), to(#494949)); }
+#header #branding h1 a,
+#header #user-tools a,
+#header { color: #151515; text-shadow: 0 1px 1px rgba(255,255,255,.3); }
+#header h1 { padding-left: 0; margin-left: 15px; }
+#header a { padding-bottom: 1px; border-bottom: 1px solid #444; }
+#header a:hover,
+#header #branding a:hover,
+#header #user-tools a:hover { text-decoration: none; color: #000; border-color: #353535; }
+#header #user-tools { font-size: 12px; top: -3px; }
+
+#content h1 { font-weight: normal; }
+.module { border-color: #aaa; }
+.module th,
+.module td { border-color: #ddd; }
+.module h2, .module caption { background: -webkit-gradient(linear, 0 0, 0 100%, from(#83BFF6), to(#679AC3)); }
+.module h2,
+.module h2 a,
+.module caption a.section { color: #235881; text-shadow: 0 1px 1px rgba(255,255,255,.5); }
+.module h2 a:hover,
+.module caption a.section:hover { color: #193F5C; }
+.module#recent-actions-module h2,
+#content-main fieldset.collapsed h2,
+fieldset.collapsed h2 a,
+fieldset.collapsed caption a.section { color: #888; text-shadow: 0 1px 1px rgba(255,255,255,1); }
+fieldset.collapsed h2 a:hover,
+fieldset.collapsed caption a.section:hover { color: #666; }
+
+#changelist-filter h3,
+#changelist table thead th { text-shadow: 0 1px 1px rgba(255,255,255,1); }
